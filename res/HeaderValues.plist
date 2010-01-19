@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>user-agent</key>
+	<array>
+		<string>Internet Explorer 7.0           --- Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)</string>
+		<string>Internet Explorer 6.0           --- Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)</string>
+		<string>Internet Explorer 5.5           --- Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)</string>
+		<string>Internet Explorer 5.2.3 – Mac   --- Mozilla/4.0 (compatible; MSIE 5.23; Mac_PowerPC)</string>
+		<string>Firefox 3.0.4 - Mac             --- Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4</string>
+		<string>Firefox 3.0.4 - Windows         --- Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.12) Gecko/2008102920 Firefox/3.0.4</string>
+		<string>Firefox 2.0.0.12 - Mac          --- Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.12) Gecko/20080201 Firefox/2.0.0.12</string>
+		<string>Firefox 2.0.0.12 - Windows      --- Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.12) Gecko/20080201 Firefox/2.0.0.12</string>
+		<string>Firefox 1.5.0.12 - Mac          --- Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.12) Gecko/20070508 Firefox/1.5.0.12</string>
+		<string>Firefox 1.5.0.12 - Windows      --- Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.12) Gecko/20070508 Firefox/1.5.0.12</string>
+		<string>Safari 3.2.1 - Mac              --- Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_5; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1</string>
+		<string>Safari 3.2.1 - Windows          --- Mozilla/5.0 (Windows; U; Windows NT 5.1; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1</string>
+		<string>Safari 3.1.2 - Mac              --- Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_2; en-us) AppleWebKit/525.13 (KHTML, like Gecko) Version/3.1 Safari/525.13</string>
+		<string>Safari 3.1.2 - Windows          --- Mozilla/5.0 (Windows; U; Windows NT 5.1; en-us) AppleWebKit/525.13 (KHTML, like Gecko) Version/3.1 Safari/525.13</string>
+		<string>Safari 3.0.4 - Mac              --- Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-us) AppleWebKit/523.10.3 (KHTML, like Gecko) Version/3.0.4 Safari/523.10</string>
+		<string>Safari 2.0.4 - Mac              --- Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/419 (KHTML, like Gecko) Safari/419.3</string>
+		<string>Safari 1.3.2 - Mac              --- Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/312.8 (KHTML, like Gecko) Safari/312.6</string>
+		<string>Safari 1.2.4 - Mac              --- Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/125.5.7 (KHTML, like Gecko) Safari/125.12</string>
+		<string>MobileSafari 1.1.3 - iPhone     --- Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/4A93 Safari/419.3</string>
+		<string>MobileSafari 1.1.3 - iPod touch --- Mozilla/5.0 (iPod; U; CPU like Mac OS X; en) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/4A93 Safari/419.3</string>
+		<string>Opera 9.25 - Mac                --- Opera/9.25 (Macintosh; Intel Mac OS X; U; en)</string>
+		<string>Opera 9.25 - Windows            --- Opera/9.25 (Windows NT 5.1; U; en)</string>
+		<string>Lynx 2.8.4rel.1 on Linux        --- Lynx/2.8.4rel.1 libwww-FM/2.14</string>
+	</array>
+	<key>connection</key>
+	<array>
+		<string>close</string>
+		<string>keep-alive</string>
+	</array>
+	<key>accept</key>
+	<array>
+		<string>*/*</string>
+		<string>text/plain</string>
+		<string>text/html</string>
+		<string>text/plain, text/html</string>
+		<string>application/xml</string>
+	</array>
+	<key>accept-language</key>
+	<array>
+		<string>*</string>
+		<string>en</string>
+		<string>es</string>
+		<string>de</string>
+		<string>fr</string>
+	</array>
+	<key>accept-encoding</key>
+	<array>
+		<string>gzip, deflate</string>
+		<string>gzip</string>
+		<string>deflate</string>
+	</array>
+	<key>cache-control</key>
+	<array>
+		<string>cache</string>
+		<string>no-cache</string>
+	</array>
+	<key>pragma</key>
+	<array>
+		<string>cache</string>
+		<string>no-cache</string>
+	</array>
+	<key>content-type</key>
+	<array>
+		<string>application/octet-stream</string>
+		<string>application/x-www-form-urlencoded</string>
+		<string>application/xml</string>
+		<string>multipart/form-data</string>
+		<string>text/html</string>
+		<string>text/plain</string>
+		<string>text/xml</string>
+	</array>
+	<key>if-match</key>
+	<array>
+		<string>*</string>
+	</array>
+	<key>if-none-match</key>
+	<array>
+		<string>*</string>
+	</array>
+</dict>
+</plist>

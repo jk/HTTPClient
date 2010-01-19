@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+	<title>HTTP Client Appcast</title>
+	<link>http://ditchnet.org/httpclient/appcast/httpclient.rss</link>
+	<copyright>Copyright retained by original author, refer to http://ditchnet.org/httpclient for further information</copyright>
+	<description/>
+	<webMaster>todd.ditchendorf@gmail.com</webMaster>
+	<lastBuildDate>2008-02-08T04:07:43</lastBuildDate>
+	<image>
+		<url/>
+		<title>HTTP Client Appcast</title>
+		<link>http://ditchnet.org/httpclient/appcast/httpclient.rss</link>
+	</image>
+	<ttl>60</ttl>
+
+	<item>
+		<title>HTTP Client 0.9.2</title>
+		<link>http://ditchnet.org/httpclient/changelog.html</link>
+		<description>
+			&lt;ul&gt;	
+			&lt;li&gt;Added Auto-updating via Sparkle.&lt;/li&gt;
+			&lt;/ul&gt;
+		</description>
+		<guid isPermaLink="false">http://ditchnet.org/httpclient/dist/HTTPClient_0.9.2.zip</guid>
+		<pubDate>Sun, 08 Feb 2009 04:07:43 GMT</pubDate>
+		<author>Todd Ditchendorf</author>
+		<enclosure url="http://ditchnet.org/httpclient/dist/HTTPClient_0.9.2.zip" type="application/octet-stream"/>
+	</item>
+
+</channel>
+</rss>
