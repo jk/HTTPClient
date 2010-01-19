@@ -577,10 +577,18 @@
 
 
 - (NSInteger)numberOfItemsInComboBoxCell:(NSComboBoxCell *)cell {
+    
     BOOL isValueCell = [cell tag];
+    
     if (isValueCell) {
-        NSDictionary *header = [[headersController selectedObjects] objectAtIndex:0];
-        NSString *name = [[header objectForKey:@"name"] lowercaseString];
+        NSArray *selectedObjects = [headersController selectedObjects];
+        NSDictionary *header = nil;
+        NSString *name = nil;
+        
+        if ([selectedObjects count] > 0) {
+             header = [[headersController selectedObjects] objectAtIndex:0];
+        }
+        name = [[header objectForKey:@"name"] lowercaseString];
         
         if ([self isNameRequiringTodaysDateString:name]) {
             return 1;

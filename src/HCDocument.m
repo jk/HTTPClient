@@ -75,7 +75,7 @@
 - (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError {
     BOOL result = YES;
     @try {
-        self.config = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        self.config = [[[NSKeyedUnarchiver unarchiveObjectWithData:data] mutableCopy] autorelease];
         if (!config) [NSException raise:@"UnknownError" format:nil];
     } @catch (NSException *e) {
         *outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:readErr userInfo:[e userInfo]];
