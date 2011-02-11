@@ -35,6 +35,7 @@
 - (void)updateTextWrapInTextView:(NSTextView *)textView withinScrollView:(NSScrollView *)scrollView;
 - (NSAttributedString *)attributedStringForString:(NSString *)s;
 - (void)updateSoureCodeViews;
+- (void)updateWebView;
 - (void)cleanUserAgentStringsInHeaders:(NSArray *)headers;
 - (void)requestCompleted:(id)cmd;
 @end
@@ -454,7 +455,26 @@
     [responseTextView setInsertionPointColor:ipColor];
 }
 
+- (void)updateWebView {
+	if (command) {
+		NSString *rawResponse = [command objectForKey:@"rawResponse"];
+		if (rawResponse.length) {
+			NSScanner * scanner = [NSScanner scannerWithString:rawResponse];
+			[scanner scanUpToString:@"\r\n\r\n" intoString:nil];
+			
+			NSURL * baseURL= nil;
+			if ([[NSURL URLWithString:[command objectForKey:@"finalURLString"]] baseURL]) {
+				baseURL = [[NSURL URLWithString:[command objectForKey:@"finalURLString"]] baseURL];	
+			} else {
+				baseURL = [NSURL URLWithString:[command objectForKey:@"finalURLString"]];
+			}
 
+			
+			[[responseWebView mainFrame] loadHTMLString:[rawResponse substringFromIndex:[scanner scanLocation]] baseURL:baseURL];
+		}
+	}
+		
+}
 // trim out the user-friendly UA names in any user-agent string header values
 - (void)cleanUserAgentStringsInHeaders:(NSArray *)headers {
     for (id headerDict in headers) {
@@ -478,6 +498,7 @@
     
     self.command = cmd;
     [self updateSoureCodeViews];
+	[self updateWebView];
     [self renderGutters];
     self.busy = NO;
     [self openLocation:self]; // focus the url bar    
