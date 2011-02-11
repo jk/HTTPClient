@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		1DDD582C0DA1D0D100B32029 /* HCDocumentWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58280DA1D0D100B32029 /* HCDocumentWindow.xib */; };
 		1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582A0DA1D0D100B32029 /* MainMenu.xib */; };
-		43AFEFA21106699600557753 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AFEFA11106699600557753 /* SystemConfiguration.framework */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		93CC84861305F93800425282 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CC84851305F93800425282 /* SystemConfiguration.framework */; };
+		93CC84881305F93F00425282 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CC84871305F93F00425282 /* WebKit.framework */; };
 		D30DDFAA0F3E92BD00274E93 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30DDFA90F3E92BD00274E93 /* Sparkle.framework */; };
 		D30DDFB50F3E92CC00274E93 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D30DDFA90F3E92BD00274E93 /* Sparkle.framework */; };
 		D30DDFB80F3E92D700274E93 /* httpclient_dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = D30DDFB70F3E92D700274E93 /* httpclient_dsa_pub.pem */; };
@@ -71,6 +72,9 @@
 		43AFEFA11106699600557753 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* HTTP Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HTTP Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93CC84851305F93800425282 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = ../../../../System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<group>"; };
+		93CC84871305F93F00425282 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = ../../../../System/Library/Frameworks/WebKit.framework; sourceTree = "<group>"; };
+		93DBCFB21305EED300945432 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		D30DDFA90F3E92BD00274E93 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = frameworks/Sparkle.framework; sourceTree = "<group>"; };
 		D30DDFB70F3E92D700274E93 /* httpclient_dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = httpclient_dsa_pub.pem; path = res/httpclient_dsa_pub.pem; sourceTree = "<group>"; };
 		D357D48E0EE6233A009D62AE /* HCWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HCWindowController.h; path = src/HCWindowController.h; sourceTree = "<group>"; };
@@ -114,11 +118,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93CC84881305F93F00425282 /* WebKit.framework in Frameworks */,
+				93CC84861305F93800425282 /* SystemConfiguration.framework in Frameworks */,
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
 				D357D5630EE63376009D62AE /* Security.framework in Frameworks */,
 				D385FFA80F0615EB00DB2946 /* TDParseKit.framework in Frameworks */,
 				D30DDFAA0F3E92BD00274E93 /* Sparkle.framework in Frameworks */,
-				43AFEFA21106699600557753 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +137,7 @@
 				D385FFA70F0615EB00DB2946 /* TDParseKit.framework */,
 				D357D5620EE63376009D62AE /* Security.framework */,
 				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+				93DBCFB21305EED300945432 /* WebKit.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -157,6 +163,8 @@
 		2A37F4AAFDCFA73011CA2CEA /* HTTPClient */ = {
 			isa = PBXGroup;
 			children = (
+				93CC84871305F93F00425282 /* WebKit.framework */,
+				93CC84851305F93800425282 /* SystemConfiguration.framework */,
 				2A37F4ABFDCFA73011CA2CEA /* Classes */,
 				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
@@ -298,7 +306,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "HTTPClient" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* HTTPClient */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -447,9 +462,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
@@ -460,8 +476,9 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};
